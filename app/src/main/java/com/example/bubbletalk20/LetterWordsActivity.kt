@@ -24,19 +24,19 @@ class LetterWordsActivity : AppCompatActivity() {
 
         tts = TextToSpeech(this) { status ->
             if (status == TextToSpeech.SUCCESS) {
-                // TTS is ready to use
+              
                 val result = tts.setLanguage(Locale.getDefault())
-                // Now you can safely use tts
+              
             }
         }
 
-        // 返回按鈕
+        // 返回
         val btnBack = findViewById<Button>(R.id.btn_back)
         btnBack.setOnClickListener {
-            showImageThenFinish()//上一頁
+            showImageThenFinish()
         }
 
-        // 取得從 A~Z 點選的字母
+        // 取得
         val letter = intent.getStringExtra("letter") ?: "A"
         val words = getWordsForLetter(letter)
 
