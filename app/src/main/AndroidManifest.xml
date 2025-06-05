@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bubbletalk20">
+
+    <!-- 如果您的 App 會使用網路或其他權限，可在這裡一併申請 -->
+    <!--
+    <uses-permission android:name="android.permission.INTERNET"/>
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BubbleTalk20">
+
+
+        <service
+            android:name=".MusicService"
+            android:exported="false" />
+
+
+        <!-- ThemeWordsActivity -->
+        <activity
+            android:name=".ThemeWordsActivity"
+            android:exported="false" />
+
+        <!-- ThemeAdapter（如果您把 Adapter 做成 Activity，也要宣告） -->
+        <activity
+            android:name=".ThemeAdapter"
+            android:exported="false" />
+
+        <!-- 針對自訂的 activity_theme (如果有獨立的 Activity) -->
+        <activity
+            android:name=".activity_theme"
+            android:exported="false" />
+
+        <!-- LetterWordsAdapter（若是直接啟動，才需要；通常 Adapter 不用宣告成 Activity） -->
+        <activity
+            android:name=".LetterWordsAdapter"
+            android:exported="false" />
+
+        <!-- LetterWordsActivity -->
+        <activity
+            android:name=".LetterWordsActivity"
+            android:exported="false" />
+
+        <!-- LetterAdapter（同上，若您把 Adapter 當 Activity 用才需宣告） -->
+        <activity
+            android:name=".LetterAdapter"
+            android:exported="false" />
+
+        <!-- ThemeActivity -->
+        <activity
+            android:name=".ThemeActivity"
+            android:exported="false" />
+
+        <!-- AZActivity -->
+        <activity
+            android:name=".AZActivity"
+            android:exported="false" />
+
+        <!-- AlphabetActivity -->
+        <activity
+            android:name=".AlphabetActivity"
+            android:exported="false" />
+
+        <!-- MainActivity（含 LAUNCHER intent-filter） -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
