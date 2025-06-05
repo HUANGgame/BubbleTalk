@@ -2,30 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wallpaper"
+    android:background="@drawable/start"
     android:gravity="center"
     android:orientation="vertical">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:text="Start"
-        android:textColor="#72116CB4"
-        android:textSize="96sp"
-        android:textStyle="normal" />
 
 
     <Button
         android:id="@+id/btn_start"
-        android:layout_width="196dp"
-        android:layout_height="229dp"
+        android:layout_width="246dp"
+        android:layout_height="216dp"
         android:background="@android:color/transparent"
-        android:text="開始      ㄎㄞ ㄕˇ"
-        android:textColor="#E06B45"
-        android:textSize="34sp"
+        android:text="Start
+        開 始      ㄎㄞ ㄕˇ"
+        android:textColor="#E5FFD56F"
+        android:textSize="44sp"
         android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000BCD4"
+        android:text=" ."
+        android:textColor="#00FFFFFF"
+        android:textColorLink="#00FDFDFD"
+        android:textSize="96sp" />
 
 
 </LinearLayout>

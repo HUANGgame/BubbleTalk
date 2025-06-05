@@ -4,9 +4,6 @@
     android:layout_height="match_parent"
     android:background="#00BCD4">
 
-    <!-- 返回 -->
-
-    <!-- A~Z  -->
 
     <Button
         android:id="@+id/btn_back_to_main"

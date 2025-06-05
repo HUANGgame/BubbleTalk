@@ -5,13 +5,14 @@
     android:background="@drawable/learn">
 
 
-    <!--標題 -->
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="10dp"
         android:text="BubbleTalk"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -23,23 +24,22 @@
         android:layout_height="160dp"
         android:layout_below="@id/tv_title"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="153dp"
-        android:layout_marginEnd="235dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="234dp"
         android:background="@android:color/transparent"
         android:text="A-Z"
         android:textColor="#FFFFFF"
         android:textSize="45sp"
         android:textStyle="bold" />
 
-
     <Button
         android:id="@+id/btn_theme"
-        android:layout_width="228dp"
-        android:layout_height="216dp"
+        android:layout_width="wrap_content"
+        android:layout_height="192dp"
         android:layout_below="@id/btn_alphabet"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="56dp"
         android:background="@android:color/transparent"
         android:text="Theme"
         android:textColor="#FFFFFF"

@@ -47,15 +47,15 @@ class LetterWordsActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
     }
     private fun showImageThenFinish() {
-        // 建立一個不會自動關閉的對話框 (Dialog)
+
         val dialog = Dialog(this)
-        // 使用剛才建立的 layout
+
         dialog.setContentView(R.layout.dialog_image)
-        // 按對話框之外不要自動關閉
+
         dialog.setCancelable(false)
         dialog.show()
 
-        // Handler 延遲 2 秒後關掉對話框並 finish()
+
         Handler(Looper.getMainLooper()).postDelayed({
             dialog.dismiss()
             finish()
@@ -63,7 +63,7 @@ class LetterWordsActivity : AppCompatActivity() {
     }
 
 
-    // 回傳對應 15 個單字
+
     private fun getWordsForLetter(letter: String): List<String> {
         return when (letter.uppercase()) {
 
