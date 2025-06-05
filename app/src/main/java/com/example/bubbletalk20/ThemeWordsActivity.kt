@@ -22,9 +22,9 @@ class ThemeWordsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_letter_words)
         tts = TextToSpeech(this) { status ->
             if (status == TextToSpeech.SUCCESS) {
-                // TTS is ready to use
+                
                 val result = tts.setLanguage(Locale.getDefault())
-                // Now you can safely use tts
+               
             }
         }
         // 返回
@@ -46,15 +46,15 @@ class ThemeWordsActivity : AppCompatActivity() {
         showImageThenFinish()
     }
     private fun showImageThenFinish() {
-        // 1. 建立一個不會自動關閉的 Dialog
+        
         val dialog = Dialog(this)
-        // 2. 設定 content view 為 dialog_image_theme.xml
+        
         dialog.setContentView(R.layout.dialog_image)
-        // 3. 按對話框之外不要自動關閉
+        
         dialog.setCancelable(false)
         dialog.show()
 
-        // 4. 兩秒後自動關閉對話框，並結束 Activity
+        
         Handler(Looper.getMainLooper()).postDelayed({
             dialog.dismiss()
             finish()
