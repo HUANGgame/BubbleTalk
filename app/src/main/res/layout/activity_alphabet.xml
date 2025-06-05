@@ -5,7 +5,7 @@
     android:background="@drawable/learn">
 
 
-    <!--標題 -->
+   
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
