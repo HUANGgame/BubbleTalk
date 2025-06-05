@@ -4,10 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/wallpaper">
 
-    <!-- 返回 -->
-
-    <!-- 單字  -->
-
+  
     <Button
         android:id="@+id/btn_back"
         android:layout_width="178dp"
